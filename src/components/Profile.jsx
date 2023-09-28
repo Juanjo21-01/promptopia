@@ -1,8 +1,9 @@
+'use client'
 
-const Profile = () => {
-  return (
-    <div>Profile</div>
-  )
-}
+import { SessionProvider } from 'next-auth/react';
 
-export default Profile
+const Profile = ({ children, session }) => {
+  return <SessionProvider session={session}>{children}</SessionProvider>;
+};
+
+export default Profile;
