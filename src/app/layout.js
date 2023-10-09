@@ -12,15 +12,15 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body>
         {/* <Provider> */}
-          <div className="main">
-            <div className="gradient"></div>
-          </div>
+        <div className="main">
+          <div className="gradient"></div>
+        </div>
 
-          <main className="app">
-            <Navbar />
+        <main className="app">
+          <Navbar />
 
-            {children}
-          </main>
+          {children}
+        </main>
         {/* </Provider> */}
       </body>
     </html>
